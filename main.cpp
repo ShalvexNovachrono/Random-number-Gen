@@ -23,7 +23,7 @@ string input(string message) {
 int GenRandomInt(int MIN, int MAX) {
     random_device rd;
     mt19937 gen(rd());
-    uniform_int_distribution<int> dis(1, 10);
+    uniform_int_distribution<int> dis(MIN, MAX);
     return dis(gen);
 }
 
